@@ -11,5 +11,3 @@ import {bootstrap} from 'angular2/platform/browser';
 export class HelloApp {
     name: string = 'World';
 }
-
-bootstrap(HelloApp);
