@@ -1,13 +1,16 @@
 {
   "name": "ng2-play.ts",
-  "version": "1.0.0-SNAPSHOT",
+  "version": "1.0.0",
   "description": "A minimal Angular2 playground using TypeScript",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pkozlowski-opensource/ng2-play.ts.git"
   },
+  "keywords": [],
+  "author": "Michael Chavez, Space-Rocket | Web & Graphic Design",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pkozlowski-opensource/ng2-play.ts/issues"
+    "url": "https://github.com/bigbassroller/Angular2-Fullstack-Boilerplate/issues"
   },
   "homepage": "https://github.com/pkozlowski-opensource/ng2-play.ts#readme",
   "devDependencies": {
@@ -19,12 +22,13 @@
     "serve-static": "^1.10.0"
   },
   "dependencies": {
-    "angular2": "2.0.0-beta.2",
-    "es6-promise": "^3.0.2",
+    "angular2": "2.0.0-beta.7",
+    "es6-promise": "^3.1.2",
     "es6-shim": "^0.33.3",
+    "express": "^4.13.4",
     "reflect-metadata": "0.1.2",
-    "rxjs": "5.0.0-beta.0",
-    "zone.js": "0.5.10",
-    "systemjs": "0.19.6"
+    "rxjs": "5.0.0-beta.2",
+    "systemjs": "^0.19.23",
+    "zone.js": "0.5.15"
   }
 }
