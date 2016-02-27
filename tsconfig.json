@@ -4,12 +4,14 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es5",
-    "module": "system",
+    "module": "commonjs",
     "moduleResolution": "node",
     "removeComments": true,
     "sourceMap": false
   },
   "exclude": [
+    "typings/main.main.d.ts",
+    "typings/main",
     "node_modules"
   ]
 }
