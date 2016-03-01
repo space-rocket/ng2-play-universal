@@ -8,6 +8,6 @@ import {bootstrap} from 'angular2/platform/browser';
         Say hello to: <input [value]="name" (input)="name = $event.target.value">
     `
 })
-export class HelloApp {
+export class App {
     name: string = 'World';
 }

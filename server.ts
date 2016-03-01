@@ -1,15 +1,19 @@
-import * as path from 'path';
 import * as express from 'express';
-
-// Angular 2
 import {ng2engine} from 'angular2-universal-preview';
-
-import {HelloApp} from './src/hello';
+import {App} from './src/app';
 
 let app = express();
 
+app.engine('.ng2.html', ng2engine);
+app.set('views', __dirname);
+app.set('view engine', 'ng2.html');
+
 app.use(express.static(__dirname));
 
-app.listen(3000, () => {
-    console.log('Listening on http://localhost:3000...');
+app.use('/', function(req, res) {
+	res.render('index', { App: App })
+})
+
+app.listen(4000, () => {
+	console.log('Listening on http://localhost:4000...');
 });

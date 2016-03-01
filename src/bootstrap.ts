@@ -1,7 +1,7 @@
 import {Component} from 'angular2/core';
-import {bootstrap} from 'angular2/platform/browser';
+import {bootstrap} from 'angular2-universal-preview';
 
-import {HelloApp}  from './hello'; 
+import {App}  from './app'; 
 
 
-bootstrap(HelloApp, []);
+bootstrap(App);
