@@ -1,4 +1,5 @@
 node_modules
 npm-debug.log
 dist
+ng2-play-universal.sublime-project
 .DS_Store
