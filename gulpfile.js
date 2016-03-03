@@ -4,6 +4,19 @@ var PATHS = {
     src: 'src/**/*.ts'
 };
 
+//copy html/css/js files
+gulp.task('copy:src', function() {
+  return gulp.src([
+      'src/assets',
+      'system.config.js',
+      'src/index.html',
+      'src/*.html',
+      'src/*.css'
+    ])
+    .pipe(gulp.dest('dist'))
+    // .pipe(connect.reload());
+});
+
 gulp.task('clean', function (done) {
     var del = require('del');
     del(['dist'], done);
@@ -20,7 +33,7 @@ gulp.task('ts2js', function () {
     return tsResult.js.pipe(gulp.dest('dist'));
 });
 
-gulp.task('play', ['ts2js'], function () {
+gulp.task('play', ['ts2js', 'copy:src'], function () {
     var http = require('http');
     var connect = require('connect');
     var serveStatic = require('serve-static');
