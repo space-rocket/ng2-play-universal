@@ -13,6 +13,6 @@ Clone this repo and execute in your favourite shell:
 
 After completing installation type in your favorite shell:
 
-* `npm start` to start a "Hello World" app and go to [localhost:4000](localhost:4000) in browser. App files are observed and will be re-transpiled on each change.
+* `npm start` to start a "Hello World" app and go to [localhost:4000](http://localhost:4000/) in your browser. App files are observed and will be re-transpiled on each change.
 
 

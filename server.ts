@@ -5,10 +5,10 @@ import {App} from './src/app';
 let app = express();
 
 app.engine('.ng2.html', ng2engine);
-app.set('views', __dirname);
+app.set('views', __dirname + '/src');
 app.set('view engine', 'ng2.html');
 
-app.use(express.static(__dirname));
+app.use(express.static(__dirname + '/'));
 
 app.use('/', function(req, res) {
 	res.render('index', { App: App })
