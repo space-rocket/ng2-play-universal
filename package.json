@@ -13,7 +13,7 @@
     "url": "https://github.com/bigbassroller/Angular2-Fullstack-Boilerplate/issues"
   },
   "scripts": {
-    "start": "gulp ts2js && ts-node server.ts"
+    "start": "gulp ts2js && gulp copy:src && ts-node server.ts"
   },
   "homepage": "https://github.com/pkozlowski-opensource/ng2-play.ts#readme",
   "dependencies": {

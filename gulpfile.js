@@ -8,7 +8,7 @@ var PATHS = {
 gulp.task('copy:src', function() {
   return gulp.src([
       'src/assets',
-      'system.config.js',
+      'src/system.config.js',
       'src/index.html',
       'src/*.html',
       'src/*.css'
@@ -37,7 +37,7 @@ gulp.task('play', ['ts2js', 'copy:src'], function () {
     var http = require('http');
     var connect = require('connect');
     var serveStatic = require('serve-static');
-    var open = require('open');
+
 
     var port = 9000, app;
 
